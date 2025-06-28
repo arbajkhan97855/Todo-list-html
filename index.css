@@ -1,0 +1,80 @@
+#list-main-box {
+    background-color: #eaf6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#list-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+#list-container h2 {
+    text-align: center;
+    color: #1e70f0;
+}
+
+.input-section {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.input-section input {
+    padding: 10px;
+    border: 2px solid #1e70f0;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.input-section button {
+    background-color: #1e70f0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-section button:hover{
+    background-color: rgba(0, 0, 0, 0.87);
+}
+#data-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 5px 15px;
+      border-bottom: 1px dashed #ccc;
+      padding: 10px 0px;
+      gap: 5px;
+    
+}
+#data-box .data-check:hover{
+   border: 2px solid #1e70f0;
+   padding: 10px;
+}
+#data-box .data-check{
+   border: 2px solid white;
+   padding: 10px;
+   color: green;
+}
+#data-box .remove-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 8px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #data-box .remove-btn:hover{
+        background-color: #f44336d3;
+    }
+    #data-box .data-text{
+        font-size: 18px;
+       }
