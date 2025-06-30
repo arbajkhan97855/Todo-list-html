@@ -11,7 +11,7 @@
             let inputdata = inputdataa.trim()
 
             if (inputdata.length > 0) {
-                ListData.push({ data: inputdata })
+                ListData.push({ data: inputdata, completed: false })
                 alert("Succefully Add Your Task ✔️")
                 document.getElementById("input-box").value = ""
                 ListValue();
@@ -29,8 +29,8 @@
             ListData.forEach((item, index) => {
                 contandId.innerHTML += `
          <div id="data-box">
-        <span class="data-check">✔️</span>
-        <span class="data-text">${item.data}</span>
+        <span class="data-check"  onclick="CompleteTask(${index})">✔️</span>
+        <span class="data-text" style="text-decoration: ${item.completed ? 'line-through' : 'none'}" >${item.data}</span>
         <button class="remove-btn" onclick="Removedata(${index})">Remove</button>
         </div>`
             })
@@ -44,7 +44,12 @@
           }else{
             alert("Not remove task")
           }
-           
+        }
+
+        function CompleteTask(e){
+         ListData[e].completed = !ListData[e].completed;
+         saveToLocal()
+         ListValue()
         }
  
      
