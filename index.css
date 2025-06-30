@@ -42,38 +42,59 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.input-section button:hover{
+
+.input-section button:hover {
     background-color: rgba(0, 0, 0, 0.87);
 }
-#data-box{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 5px 15px;
-      border-bottom: 1px dashed #ccc;
-      padding: 10px 0px;
-      gap: 5px;
+
+#data-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 15px;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0px;
+    gap: 5px;
 }
-#data-box .data-check:hover{
-   border: 2px solid #1e70f0;
-   padding: 10px;
+
+#data-box .data-check:hover {
+    border: 2px solid #1e70f0;
+    padding: 10px;
 }
-#data-box .data-check{
-   border: 2px solid white;
-   padding: 10px;
-   color: green;
+
+#data-box .data-check {
+    border: 2px solid white;
+    padding: 10px;
+    color: green;
 }
+
 #data-box .remove-btn {
-      background-color: #f44336;
-      color: white;
-      border: none;
-      padding: 8px 10px;
-      border-radius: 5px;
-      cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#data-box .remove-btn:hover {
+    background-color: #f44336d3;
+}
+
+#data-box .data-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width:320px) {
+    .input-section {
+        gap: 10px;
     }
-    #data-box .remove-btn:hover{
-        background-color: #f44336d3;
+
+    #list-container {
+        padding: 10px;
     }
-    #data-box .data-text{
-        font-size: 18px;
-       }
+
+    .input-section button {
+        padding: 10px 7px;
+    }
+}
