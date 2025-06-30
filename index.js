@@ -6,18 +6,21 @@
     }
    
         function Adddata() {
-        
+           
             let inputdataa = document.getElementById("input-box").value
             let inputdata = inputdataa.trim()
-
-            if (inputdata.length > 0) {
+             let isDuplicate = ListData.find(item => item.data.toLowerCase() === inputdata.toLowerCase());
+            if (inputdata.length > 0 )
+              if(!isDuplicate){
                 ListData.push({ data: inputdata, completed: false })
                 alert("Succefully Add Your Task ✔️")
                 document.getElementById("input-box").value = ""
                 ListValue();
                 saveToLocal();
             }else{
-                alert("Please Enter Your Task Name ")
+                alert("Please cannot Enter Your duplicate Name ")
+            }else{
+              alert("Please Enter Your Task Name ")
             }
 
         }
