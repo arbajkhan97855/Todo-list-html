@@ -18,9 +18,9 @@
                 ListValue();
                 saveToLocal();
             }else{
-                alert("Please cannot Enter Your duplicate Name ")
+                alert("Please cannot Enter Your duplicate Name ❌")
             }else{
-              alert("Please Enter Your Task Name ")
+              alert("Please Enter Your Task Name ⚠️")
             }
 
         }
